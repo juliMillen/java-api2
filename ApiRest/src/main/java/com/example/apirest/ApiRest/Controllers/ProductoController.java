@@ -50,7 +50,6 @@ public class ProductoController {
 			}
 	}
 	
-	
 	@DeleteMapping("/delete/{id}")
 	public void eliminarProductoPorId(@PathVariable Long id) {
 		  productoService.eliminarPorId(id);

@@ -22,8 +22,6 @@ public class Rol {
 		this.id = id;
 	}
 	
-	
-
 	public String getRoleName() {
 		return roleName;
 	}
@@ -41,11 +39,5 @@ public class Rol {
 		super();
 		this.roleName = roleName;
 	}
-	
-	
-
-	
-	
-
 	
 }

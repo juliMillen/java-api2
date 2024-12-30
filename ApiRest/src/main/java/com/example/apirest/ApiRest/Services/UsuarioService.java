@@ -27,5 +27,4 @@ public class UsuarioService {
 	  Optional<Usuario> usuario = usuarioRepository.findByUsername(nombre);
 	  return usuario.orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
 	}
-	
 }

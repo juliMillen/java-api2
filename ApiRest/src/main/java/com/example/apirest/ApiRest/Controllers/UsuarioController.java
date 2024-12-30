@@ -75,6 +75,4 @@ public class UsuarioController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al crear el usuario" + ex.getMessage());
 		}
 	}
-	
-	
 }

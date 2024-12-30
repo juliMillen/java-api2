@@ -15,7 +15,6 @@ public class ProductoService{
 	@Autowired
 	private IProductoRepository productoRepository;
 	
-	
 	public List<Producto> listaProductos(){
 		return productoRepository.findAll();
 	}

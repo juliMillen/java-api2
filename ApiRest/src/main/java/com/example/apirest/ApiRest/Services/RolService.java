@@ -8,10 +8,8 @@ import com.example.apirest.ApiRest.Repositories.IRolRepository;
 
 @Service
 public class RolService {
-
 	@Autowired
 	private IRolRepository rolRepository;
-	
 	
 	public Rol obtenerRolPorNombre(String rolName) {
 		return rolRepository.findByRoleName(rolName).orElseThrow(() -> new RuntimeException("Rol no encontrado"));

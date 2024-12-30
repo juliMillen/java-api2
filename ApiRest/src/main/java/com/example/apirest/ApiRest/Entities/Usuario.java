@@ -2,7 +2,6 @@ package com.example.apirest.ApiRest.Entities;
 
 import java.util.HashSet;
 import java.util.Set;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

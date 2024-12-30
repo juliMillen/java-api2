@@ -7,5 +7,5 @@ import com.example.apirest.ApiRest.Entities.Producto;
 
 @Repository
 public interface IProductoRepository extends JpaRepository<Producto, Long>{
-
+	
 }

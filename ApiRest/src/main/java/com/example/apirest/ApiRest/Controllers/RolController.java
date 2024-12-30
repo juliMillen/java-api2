@@ -41,5 +41,4 @@ public class RolController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("No se ha podido crear");
 		}
 	}
-	
 }
