@@ -36,6 +36,11 @@ public class Producto {
 		this.nombre = nombre;
 		this.precio = precio;
 	}
+
+	public Producto(String nombre, double precio){
+		this.nombre = nombre;
+		this.precio = precio;
+	}
 	public Producto() {
 		super();
 	}
