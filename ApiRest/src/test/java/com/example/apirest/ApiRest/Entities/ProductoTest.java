@@ -2,6 +2,8 @@ package com.example.apirest.ApiRest.Entities;
 
 import org.junit.jupiter.api.*;
 
+import java.time.Duration;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductoTest {
@@ -13,9 +15,16 @@ class ProductoTest {
         System.out.println(":: beforeAll ::");
     }
 
-    @AfterAll
-    static void despues(){
+    @Test
+    void despues(){
         System.out.println(":: afterAll ::");
+        Producto p3 = new Producto("Mermelada", 2300.55);
+        assertAll(
+                () -> assertEquals(2300.55, p3.getPrecio()),
+                () -> assertEquals(3,3),
+                () -> assertEquals("Mermelada",p3.getNombre()),
+                () -> assertTrue(true)
+        );
     }
 
     @BeforeEach
@@ -45,4 +54,20 @@ class ProductoTest {
         System.out.println("::Este es un segundo test ::");
     }
 
+    //PARA PRUEBAS DE RENDIMIENTO Y VELOCIDAD DE METODOS
+    @Test
+    void testTimeout(){
+        assertTimeout(
+                Duration.ofMillis(200),
+                () -> Thread.sleep(100)
+        );
+    }
+
+    @Test
+    void testArray(){
+        int[] arrayUno = new int[] {1, 4, 9, 16 , 26};
+        int[] arrayDos = new int[] {1, 4, 9, 16, 26};
+
+        assertArrayEquals(arrayUno,arrayDos);
+    }
 }
