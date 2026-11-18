@@ -22,6 +22,10 @@ public class ProductoService{
 	public Optional<Producto> obtenerPorId(Long id){
 		return productoRepository.findById(id);
 	}
+
+	public Optional<Producto>findByNameIgnoreCase(String name){
+		return productoRepository.findByNameIgnoreCase(name);
+	}
 	
 	public void crearProducto(Producto prod) {
 		productoRepository.save(prod);
